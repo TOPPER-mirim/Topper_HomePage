@@ -1,0 +1,46 @@
+body {
+    overflow: scroll; /* 스크롤 기능을 유지 */
+}
+
+::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera에서 스크롤바 숨기기 */
+}
+
+.form-container {
+    max-width: 600; /* 원하는 최대 너비로 조절 */
+    padding: 20px;
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+
+#snum, #name, #dnum{
+    width: 38%;
+}
+
+#pnum{
+    width: 12%;
+}
+
+#moap{
+    width: 38%;
+    height: 300px;
+}
+
+/* placeholder 텍스트의 스타일 */
+#moap::placeholder {
+    position: relative;
+    top: -130px;
+    left: 5px;
+}
+
+hr{
+    width: 83%;
+}
+
+#sub{
+    float: inline-end;
+}
+
