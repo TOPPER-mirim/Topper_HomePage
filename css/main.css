@@ -1,0 +1,58 @@
+body {
+    overflow-x: hidden;
+}
+
+.text-buble-container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 29px;
+    overflow: hidden; /* 컨테이너를 벗어나는 요소 숨기기 */
+}
+
+.text-buble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 0 33px;
+    gap: 10px;
+    border-radius: 100px;
+    font-size: 24px;
+    min-width: 160px; /* 최소 너비 설정 */
+    height: 100px; /* 고정된 높이 설정 */
+}
+
+.message-cotainer {
+    background-color: #345FFF;
+    /* background: #345FFF; */
+}
+
+.scroll-item {
+    display: flex;
+    font-size: 22px;
+    overflow: hidden; /* 컨테이너를 벗어나는 요소 숨기기 */
+    justify-content: center;
+}
+
+.message-item {
+    font-size: 80px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    background-color: #ffff;
+    border-radius: 60px;
+}
+
+.topper-img {
+    display: block; /* 부모 요소를 블록 요소로 설정 */
+    text-align: center; /* 자식 요소인 img를 중앙 정렬 */
+}
+
+.topper-img > img {
+    margin: 70px auto; /* 수평 중앙 정렬을 위해 auto 사용 */
+    width: 80%; /* 이미지의 너비 설정 */
+    display: block; /* 이미지 자체도 블록 요소로 설정 */
+}
