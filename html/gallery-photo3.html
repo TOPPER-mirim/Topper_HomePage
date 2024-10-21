@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topper</title>
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/gallery-photo.css">
+    <!-- 부트스트랩 아이콘 CDN 링크 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">TOPPER</div>
+        <div class="category-container">
+            <a href="/"><div class="category">Gallery</div></a>
+            <a href="/"><div class="category">지원폼</div></a>
+            <a href="/"><div class="category">Q&A</div></a>
+        </div>
+    </nav>
+    
+    <div class="content">
+        <div class="image-container">
+            <img id="image" src="/Img/img2.jpg" alt="선배님 선물">
+            <!-- 이전 버튼 -->
+            <button onclick="prevImage()" class="btn prev-btn">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+            <!-- 다음 버튼 -->
+            <button onclick="nextImage()" class="btn next-btn">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+            <div id="image-index" class="image-index">1/3</div> <!-- 이미지 인덱스 표시 -->
+        </div>
+        
+        <div class="text">
+            <h1>메가커피 마셨던 날</h1>
+            <h4>1기와 2기 모두 함께 메가 커피를 마셨던 그날, 정말 즐거운 시간이었어! 선후배들이 한자리에 모여 편하게 이야기 나누고 웃음을 나누는 순간들이 정말 소중했어.<br>특히 모두 함께 커피를 마시며 얘기하니 더 친밀해지고 서로에 대해 더 많이 알게 된 것 같아. 앞으로도 이런 시간이 자주 있었으면 좋겠어! 😊</h4>
+        </div>
+    </div>
+
+    <script>
+        const images = ["/Img/img2.jpg", "/Img/img.jpg", "/Img/img3.jpg"]; // 이미지 배열
+        let currentImageIndex = 0;
+
+        function updateImageIndex() {
+            const totalImages = images.length;
+            document.getElementById("image-index").innerText = `${currentImageIndex + 1}/${totalImages}`;
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length; // 다음 이미지
+            document.getElementById("image").src = images[currentImageIndex];
+            updateImageIndex(); // 이미지 인덱스 업데이트
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length; // 이전 이미지
+            document.getElementById("image").src = images[currentImageIndex];
+            updateImageIndex(); // 이미지 인덱스 업데이트
+        }
+
+        // 페이지 로드시 처음 이미지를 설정
+        updateImageIndex();
+    </script>
+</body>
+</html>
