@@ -1,0 +1,72 @@
+/* 전체 화면 중앙에 배치 */
+body, html {
+    background-color: #FFFBF8;
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between; /* 왼쪽과 오른쪽으로 배치 */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* 전체 콘텐츠의 최대 너비 */
+    padding: 3%;
+
+}
+
+.image-container {
+    position: relative;
+    width: 50%; /* 이미지 컨테이너를 화면의 절반으로 설정 */
+    max-width: 500px; /* 최대 너비 제한 */
+    text-align: center; /* 이미지 인덱스를 가운데 정렬 */
+}
+
+.image-container img {
+    box-shadow: 0.5px 0.5px 10px rgba(101, 100, 100, 0.5);
+    border-radius: 5px;
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px; /* 이미지와 인덱스 사이 여백 */
+}
+
+.text {
+    flex: 1;
+    text-align: left;
+    margin-left: 50px;
+}
+
+/* 이미지 인덱스 스타일 */
+.image-index {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* 버튼 스타일링 */
+.image-container .btn {
+    position: absolute;
+    top: 43%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    padding: 100px;
+    z-index: 10;
+}
+
+/* 이전 버튼은 왼쪽 끝에 배치 */
+.prev-btn {
+    left: -30px; /* 이미지에 더 가까워지도록 버튼 위치 조정 */
+}
+
+/* 다음 버튼은 오른쪽 끝에 배치 */
+.next-btn {
+    right: -30px; /* 이미지에 더 가까워지도록 버튼 위치 조정 */
+}
