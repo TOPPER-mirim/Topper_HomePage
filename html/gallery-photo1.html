@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topper</title>
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/gallery-photo.css">
+    <!-- 부트스트랩 아이콘 CDN 링크 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">TOPPER</div>
+        <div class="category-container">
+            <a href="/"><div class="category">Gallery</div></a>
+            <a href="/"><div class="category">지원폼</div></a>
+            <a href="/"><div class="category">Q&A</div></a>
+        </div>
+    </nav>
+    
+    <div class="content">
+        <div class="image-container">
+            <img id="image" src="/Img/img.jpg" alt="선배님 선물">
+            <!-- 이전 버튼 -->
+            <button onclick="prevImage()" class="btn prev-btn">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+            <!-- 다음 버튼 -->
+            <button onclick="nextImage()" class="btn next-btn">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+            <div id="image-index" class="image-index">1/3</div> <!-- 이미지 인덱스 표시 -->
+        </div>
+        
+        <div class="text">
+            <h1>1기 부장 선배님의 선물</h1>
+            <h4>Topper 1기 부장인 권지수 선배님이 직접 만들어서 주신 머랭쿠키! 달콤하고 바삭한 식감에, 정성 가득한 선배님의 손길이 느껴져서 먹는 내내 정말 행복했어.<br>이런 소중한 선물을 받으니 마음까지 따뜻해졌어! 😊</h4>
+        </div>
+    </div>
+
+    <script>
+        const images = ["/Img/img.jpg", "/Img/img2.jpg", "/Img/img3.jpg"]; // 이미지 배열
+        let currentImageIndex = 0;
+
+        function updateImageIndex() {
+            const totalImages = images.length;
+            document.getElementById("image-index").innerText = `${currentImageIndex + 1}/${totalImages}`;
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length; // 다음 이미지
+            document.getElementById("image").src = images[currentImageIndex];
+            updateImageIndex(); // 이미지 인덱스 업데이트
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length; // 이전 이미지
+            document.getElementById("image").src = images[currentImageIndex];
+            updateImageIndex(); // 이미지 인덱스 업데이트
+        }
+
+        // 페이지 로드시 처음 이미지를 설정
+        updateImageIndex();
+    </script>
+</body>
+</html>
