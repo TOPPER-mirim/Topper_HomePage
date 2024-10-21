@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    overflow: scroll; /* 스크롤 기능을 유지 */
+    background-color: #f5f5f5;
+    text-overflow: ellipsis;
+}
+  
+/* 포커스 시 테두리 및 그림자 색상 변경 */
+input[type="text"]:focus, textarea:focus {
+    border-color: #f5f5f5 !important;
+    outline: none; /* 기본 아웃라인 제거 */
+}
+
+::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera에서 스크롤바 숨기기 */
+}
+
+h1{
+    text-align: center;
+    font-weight: bolder;
+}
+
+img{
+    width: 70px;
+    height: 70px;
+    margin-left: 48.5%;
+    margin-top: 8%;
+    margin-bottom: 1%;
+}
+
+.form-container {
+    white-space: nowrap;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 120px 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+strong{
+    margin-top: 25px;
+}
+
+small{
+    position: absolute;
+    top: 100%;
+    font-size: medium;
+    color: #2856FF;
+}
+
+.item{
+    display: flex;
+    font-size: 25px;
+}
+
+h3 {
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: #0136DE;
+}
+
+hr {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    cursor: pointer;
+    background-color: #eeeeee;
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 2%;
+}
+
+#snum, #name{
+    width: 80%;
+    height: 30px;
+} 
+
+#dnum{
+    width: 20%;
+    height: 30px;
+    position: absolute;
+    top: 93%;
+    left: 50.7%;
+} 
+
+#dtext{
+    position: absolute;
+    top: 95%;
+    margin-left: 0%
+}
+
+#pnum{
+    width: 22.5%;
+    height: 40px;  
+}
+
+#moap{
+    width: 108%;
+    height: 450px;
+}
+
+input[type=radio]{
+    appearance: none;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    width: 20px;
+    height: 20px;
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+input[type='radio']:checked {
+    background-color: #fff;
+    border: 5px solid #6186ff;
+    box-shadow: 0 0 0 1px #6186ff;
+  }
+  
+
+.radio-group {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 2%;
+}
+
+.btn{
+    cursor: pointer;
+    position: relative;
+    left: 61%;
+    width: 290px;
+    height: 70px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    font-size: larger;
+}
+
+input::placeholder{
+    font-size: larger;
+}
+
+textarea::placeholder {
+    font-size: larger;
+}
