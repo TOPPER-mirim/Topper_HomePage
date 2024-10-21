@@ -17,14 +17,14 @@ input[type="text"]:focus, textarea:focus {
     display: none; /* Chrome, Safari, Opera에서 스크롤바 숨기기 */
 }
 
-h1{
+h2{
     text-align: center;
     font-weight: bolder;
 }
 
 img{
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     margin-left: 48.5%;
     margin-top: 8%;
     margin-bottom: 1%;
@@ -32,7 +32,7 @@ img{
 
 .form-container {
     white-space: nowrap;
-    max-width: 1000px;
+    max-width: 850px;
     margin: 50px auto;
     padding: 120px 100px;
     background-color: #fff;
@@ -53,17 +53,17 @@ small{
 
 .item{
     display: flex;
-    font-size: 25px;
+    font-size: 20px;
 }
 
-h3 {
+h4 {
     font-weight: bolder;
     margin-bottom: 10px;
     color: #0136DE;
 }
 
 hr {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .form-control {
@@ -76,31 +76,31 @@ hr {
 }
 
 #snum, #name{
-    width: 80%;
+    width: 90%;
     height: 30px;
 } 
 
 #dnum{
-    width: 20%;
+    width: 21.6%;
     height: 30px;
     position: absolute;
-    top: 93%;
-    left: 50.7%;
+    top: 127%;
+    left: 49.5%;
 } 
 
 #dtext{
     position: absolute;
-    top: 95%;
+    top: 128.5%;
     margin-left: 0%
 }
 
 #pnum{
-    width: 22.5%;
-    height: 40px;  
+    width: 23.5%;
+    height: 10px;  
 }
 
 #moap{
-    width: 108%;
+    width: 112%;
     height: 450px;
 }
 
@@ -125,16 +125,16 @@ input[type='radio']:checked {
     font-weight: 500;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
     margin-top: 2%;
 }
 
 .btn{
     cursor: pointer;
     position: relative;
-    left: 61%;
-    width: 290px;
-    height: 70px;
+    left: 61.8%;
+    width: 245px;
+    height: 60px;
     border-radius: 5px;
     margin-bottom: 40px;
     font-size: larger;
