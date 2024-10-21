@@ -1,15 +1,16 @@
 # Topper_HomePage
 Topper Home Page 입니다!
-## Main features
+
+## Main features 🖥️
 - 동아리 부원소개
 - 동아리 갤러리
 - 동아리 관련 질문
 - 지원서 작성 및 지원
 
-## Period
+## Period 📅
 - 2024.10.21 ~
 
-## Contributors
+## Contributors 👤
 - S [정민경](https://github.com/wizardwid)
 - S [안채연](https://github.com/Anchaeyeon)
 - W [나지은](https://github.com/jieun0240)
