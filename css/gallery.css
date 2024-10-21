@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main {
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6개의 열로 설정 */
+    grid-template-rows: repeat(2, auto); /* 2개의 행으로 설정 */
+    margin-top: 0px;
+    padding-top: 9%;
+    gap: 12px; /* 이미지 사이의 여백 */
+    width: 100%;
+    margin: 20px;
+}
+
+.imgzip {
+    position: relative;
+    width: 100%; /* 그리드 셀의 너비에 맞추기 */
+}
+
+.imgzip img {
+    border-radius: 5px;
+    width: 100%; /* 이미지를 그리드 셀에 꽉 차게 */
+    height: auto; /* 이미지 비율 유지 */
+    display: block;
+}
+.imgzip::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+    /* 그라데이션 색상 조정 가능, 0%에서 시작하고 100%에서 끝남 */
+    border-radius: 5px; /* 이미지와 동일한 경계선 */
+    pointer-events: none;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight:lighter;
+    z-index: 1; /* 텍스트가 그라데이션 위에 표시되도록 */
+}
+
+
+/* 아이콘 컨테이너 설정 */
+.icon-container {
+    position: fixed;
+    bottom: 20px; /* 하단에 고정 */
+    right: 20px; /* 오른쪽에 고정 */
+    z-index: 1000; /* 다른 요소 위에 보이도록 설정 */
+}
+
+/* 숨겨진 아이콘들이 위로 나오는 구조로 설정 */
+.other-icons {
+    position: absolute;
+    bottom: 60px; /* 처음에 아래쪽으로 숨겨둠 */
+    opacity: 0; /* 기본적으로 숨겨진 상태 */
+    transform: translateY(100%); /* 처음에 아래로 숨겨둠 */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    pointer-events: none; /* 클릭 비활성화 */
+}
+
+/* 활성화되면 위로 펼쳐지게 설정 */
+.icon-container.active .other-icons {
+    transform: translateY(0); /* 위로 펼쳐짐 */
+    opacity: 1; /* 완전하게 보임 */
+    pointer-events: auto; /* 클릭 가능 */
+}
+
+/* 메인 아이콘과 서브 아이콘 스타일 */
+.main-icon, .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.main-icon {
+    background-color: #007bff;
+    color: white;
+    font-size: 24px;
+}
+
+.main-icon img{
+    width: 175%;
+}
+.main-icon:hover {
+    background-color: #0136DE;
+}
+
+.icon {
+    background-color: white;
+    color: white;
+    margin: 5px 0;
+}
+
+.icon img{
+    width: 100%;
+}
+
+.icon:hover {
+    background-color: #0136DE;
+    background-image:url("");
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
