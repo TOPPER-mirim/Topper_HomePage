@@ -67,6 +67,7 @@ hr {
 }
 
 .form-control {
+    /* display: grid; */
     cursor: pointer;
     background-color: #eeeeee;
     padding: 28px;
@@ -81,6 +82,7 @@ hr {
 } 
 
 #dnum{
+    /* display: grid; */
     width: 21.5%;
     height: 30px;
     position: absolute;
