@@ -1,0 +1,52 @@
+{
+    "1기": [
+        {
+            "img": "img.img",
+            "name" : "양현서",
+            "department": "뉴미디어 디자인과",
+            "mbti": "ENFP",
+            "message": "나는야 학교 짱!",
+            "career-items": ["상장1", "상장2", "상장3"]
+        },
+        {
+            "img": "img.img",
+            "name" : "정민경",
+            "department": "뉴미디어 소프트웨어과",
+            "mbti": "ENTP",
+            "message": "나는야 학교 짱!",
+            "career-items": ["상장1", "상장2", "상장3"]
+        },
+        {
+            "img": "img.img",
+            "name" : "안채연",
+            "department": "뉴미디어 소프트웨어과",
+            "mbti": "INFP",
+            "message": "나는야 학교 짱!",
+            "career-items": ["상장1", "상장2", "상장3"]
+        },
+        {
+            "img": "img.img",
+            "name" : "나지은",
+            "department": "뉴미디어 웹 솔루션과",
+            "mbti": "INFP",
+            "message": "나는야 학교 짱!",
+            "career-items": ["상장1", "상장2", "상장3"]
+        },
+        {
+            "img": "img.img",
+            "name" : "왕현주",
+            "department": "뉴미디어 웹 솔루션과",
+            "mbti": "ISTP",
+            "message": "나는야 학교 짱!",
+            "career-items": ["상장1", "상장2", "상장3"]
+        },
+        {
+            "img": "img.img",
+            "name" : "장연두",
+            "department": "뉴미디어 디자인과",
+            "mbti": "INTP",
+            "message": "나는야 학교 짱!",
+            "career-items": ["상장1", "상장2", "상장3"]
+        }
+    ]
+}
