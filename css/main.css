@@ -2,7 +2,8 @@ body {
     overflow-x: hidden;
     /* overflow-y: scroll; */
     -ms-overflow-style: none;
-} 
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -13,15 +14,6 @@ body, html {
     scroll-behavior: smooth;
     height: 100vh;
     overflow-y: scroll;
-}
-
-/* 각 페이지 */
-.text-buble-container,
-.message-cotainer,
-.topper-img,
-nav,
-main {
-    scroll-snap-align: start;
 }
 
 /* start-container css */
